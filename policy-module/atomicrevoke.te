@@ -1,0 +1,10 @@
+policy_module(atomicrevoke,1.0)
+
+gen_require(`
+        type unconfined_t;
+        ')
+
+type atomicrevoke_t;
+fs_associate(atomicrevoke_t);
+
+allow unconfined_t atomicrevoke_t:file {relabelto relabelfrom unlink open read setattr getattr};

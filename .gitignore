@@ -1,0 +1,3 @@
+policy-module/*
+!policy-module/atomicrevoke.te
+!policy-module/Makefile

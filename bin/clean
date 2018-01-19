@@ -1,0 +1,3 @@
+#!/bin/bash
+bin/disable-policy-module
+git clean -df
